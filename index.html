@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,16,154,1) 0%, rgba(0,212,255,1) 100%);
+        }
+        P{
+            display: none;
+        }
+        input:hover+p{
+            display: inline;
+            background-color: greenyellow;
+            font-family: monospace;
+        }
+        input[type="radio"]:checked{
+            height: 20px;
+            width: 20px;
+        }
+        input[type="radio"]:checked + span{
+           color: brown;
+           font-weight: bolder;
+        }
+        input:required{
+            border: solid ;
+        }
+        input:focus{
+            background-color: yellowgreen;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Sign-UP FORM</legend>
+   
+    <form action="">
+        <table>
+            <tr>
+               <td><label for="">Name</label></td>
+               <td><input type="text"name="Name"size="15" required><p>Enter the Name</p></td> <br>
+            </tr>
+            <tr>
+                <td><label for="">College</label></td>
+                <td><input type="text"required></td>
+            </tr>
+            <tr>
+                <td><label for="">Primary Email</label></td>
+                <td><input type="email"required></td>
+            </tr>
+            <tr>
+                <td><label for="">Secondary Email</label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label for="">Password</label></td>
+                <td><input type="password" min="8"required></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td><input type="radio" name="gender" value="Male"><span>Male</span>
+                <input type="radio" name="gender"value="Female"><span>Female</span>
+                <input type="radio" name="gender"value="Others"><span>Others</span></td>
+                 </tr>
+                 <tr>
+                    <td><label for="">Age</label></td>
+                    <td><input type="number"name="num" min="18" max="100"></td>
+                 </tr>
+                 <tr>
+                    <td><label for="">MOD</label></td>
+                    <td><input type="text" name="MOD" value="ONLINE"></td>
+                 </tr>
+
+        </table>
+        <input type="Submit" style="margin-top: 20px;">
+        </form>
+</fieldset>
+    
+    
+</body>
+</html>
